@@ -82,12 +82,14 @@ const Content = () => {
                 })
                 }
             </ul>
-            <div className='about'>
+            <div className='about' style={{cursor:'pointer'}}>
                 about
             </div>
             <div className='description-container'>
                 <div>{pictures[active].location}</div>
                 <div>{pictures[active].time}</div>
+                <div>N: 42.328369</div>
+                <div>W: -83.074760</div>
             </div>
             <div>
                 <img 
