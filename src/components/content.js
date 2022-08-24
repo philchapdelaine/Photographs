@@ -17,8 +17,11 @@ const pictures = [
         name: "'Going Going Home'",
         textColour: "white",
         image: sign,
-        location: "Onomichi, Japan",
-        time: "2:08pm"
+        location: "Ikuchijima, Japan",
+        time: "2:08pm",
+        lat: "N: 34.2928",
+        lon: "E: 133.1069"
+
     }, 
     {
         inactive: "002",
@@ -26,7 +29,9 @@ const pictures = [
         textColour: "white",
         image: mels,
         location: "Osaka, Japan",
-        time: "10:26pm"
+        time: "10:26pm",
+        lat: "N: 34.6937",
+        lon: "E: 135.5023"
     }, 
     {
         inactive: "003",
@@ -34,7 +39,9 @@ const pictures = [
         textColour: "white",
         image: ryokan,
         location: "Tokyo, Japan",
-        time: "8:56am"
+        time: "8:56am",
+        lat: "N: 35.6762",
+        lon: "E: 139.6503"
     }, 
     {
         inactive: "004",
@@ -42,7 +49,9 @@ const pictures = [
         textColour: "white",
         image: boat,
         location: "Innoshima, Japan",
-        time: "2:43pm"
+        time: "2:43pm",
+        lat: "N: 34.3218",
+        lon: "E: 133.1650"
     }, 
     {
         inactive: "005",
@@ -50,7 +59,9 @@ const pictures = [
         textColour: "white",
         image: montreal_shop,
         location: "Montreal, Canada",
-        time: "10:32pm"
+        time: "10:32pm",
+        lat: "N: 45.5019",
+        lon: "E: 73.5674"
     },
     {
         inactive: "006",
@@ -58,7 +69,9 @@ const pictures = [
         textColour: "white",
         image: lake,
         location: "Nelson, Canada",
-        time: "3:05pm"
+        time: "3:05pm",
+        lat: "N: 49.4928",
+        lon: "W: 117.2948"
     },
     {
         inactive: "007",
@@ -66,15 +79,19 @@ const pictures = [
         textColour: "white",
         image: bridge,
         location: "Imabari, Japan",
-        time: "11:14pm"
+        time: "11:14pm",
+        lat: "N: 34.0662",
+        lon: "E: 132.9978"
     },
     {
         inactive: "008",
         name: "'H Jungle With T'",
         textColour: "white",
         image: beach,
-        location: "Onomichi, Japan",
-        time: "3:37pm"
+        location: "Oshima, Japan",
+        time: "3:37pm",
+        lat: "N: 41.5075",
+        lon: "E: 139.3542"
     }
 ];
 
@@ -105,8 +122,8 @@ const Content = () => {
             <div className='description-container'>
                 <div>{pictures[active].location}</div>
                 <div>{pictures[active].time}</div>
-                <div>N: 42.328369</div>
-                <div>W: -83.074760</div>
+                <div>{pictures[active].lat}</div>
+                <div>{pictures[active].lon}</div>
             </div>
             <div>
                 <img 
