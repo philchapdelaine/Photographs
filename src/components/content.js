@@ -13,7 +13,7 @@ import lake from '../images/lake.jpg'
 const pictures = [
     {
         inactive: "001",
-        name: "'Untitled 2:08pm'",
+        name: "'Citypop Music Video'",
         textColour: "white",
         image: sign
     }, 
@@ -25,13 +25,13 @@ const pictures = [
     }, 
     {
         inactive: "003",
-        name: "Sleeping ",
+        name: "'Sleeping'",
         textColour: "white",
         image: ryokan
     }, 
     {
         inactive: "004",
-        name: "testing 2",
+        name: "Fishing Boat?",
         textColour: "white",
         image: boat
     }, 
@@ -58,7 +58,7 @@ const Content = () => {
 
     return(
         <div className="content-container">
-            <ul className="collection_nav">
+            <ul className="collection_nav" style={{cursor:'pointer'}}>
                 {pictures.map((picture, i) => {
                     return(
                     <li 
@@ -72,7 +72,7 @@ const Content = () => {
                 })
                 }
             </ul>
-            <div className='fill-window'>
+            <div>
                 <img 
                 className="fill-window" 
                 src={pictures[active].image} 
