@@ -17,10 +17,10 @@ const pictures = [
         name: "'Going Going Home'",
         textColour: "white",
         image: sign,
-        location: "Ikuchijima, Japan",
-        time: "2:08pm",
-        lat: "N: 34.2928",
-        lon: "E: 133.1069"
+        location: "Innoshima, Japan",
+        time: "2:38pm",
+        lat: "N: 34.3218",
+        lon: "E: 133.1650"
 
     }, 
     {
