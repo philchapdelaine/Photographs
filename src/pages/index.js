@@ -13,3 +13,9 @@ const IndexPage = () => (
   </Layout>
 )
 export default IndexPage
+
+export function Head() {
+  return (
+    <title>Phil</title>
+  )
+}

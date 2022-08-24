@@ -18,10 +18,21 @@
     margin-bottom: 1rem;
 }
 
-.about {
+.about-container {
     position: absolute;
     top: 5%;
     right: 5%;
+    text-align: right;
+    line-height: 0.5cm;
+}
+
+.phil {
+    color: white;
+    text-decoration: none;
+}
+
+.phil:hover {
+    color: lightblue;
 }
 
 .about:hover {
@@ -35,6 +46,7 @@
     right: 5%;
     margin-bottom: 1.5rem;
     line-height: 0.5cm;
+    text-align: right;
 }
 
 .image {

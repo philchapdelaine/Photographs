@@ -117,8 +117,11 @@ const Content = () => {
                 }
             </ul>
             <div className='name'></div>
-            <div className='about' style={{cursor:'pointer'}}>
-                about
+            <div className='about-container' style={{cursor:'pointer'}}>
+                <div className='phil'>
+                    <a className='phil' rel="noreferrer" href="https://www.linkedin.com/in/philippe-chapdelaine-b63561185/" target="_blank">phil</a>
+                </div>
+                <div className='about'>about</div>
             </div>
             <div className='description-container'>
                 <div>{pictures[active].location}</div>
