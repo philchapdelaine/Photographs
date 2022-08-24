@@ -8,7 +8,8 @@ import ryokan from '../images/ryokan.jpg'
 import mels from '../images/mels_diner.jpg'
 import montreal_shop from '../images/montreal_shop.jpg'
 import lake from '../images/lake.jpg'
-
+import bridge from '../images/bridge.jpg'
+import beach from '../images/beach.jpg'
 
 const pictures = [
     {
@@ -40,7 +41,7 @@ const pictures = [
         name: "'Ghibli Movie'",
         textColour: "white",
         image: boat,
-        location: "Onomichi, Japan",
+        location: "Innoshima, Japan",
         time: "2:43pm"
     }, 
     {
@@ -58,6 +59,22 @@ const pictures = [
         image: lake,
         location: "Nelson, Canada",
         time: "3:05pm"
+    },
+    {
+        inactive: "007",
+        name: "'Something About A Bridge'",
+        textColour: "white",
+        image: bridge,
+        location: "Imabari, Japan",
+        time: "11:14pm"
+    },
+    {
+        inactive: "008",
+        name: "'H Jungle With T'",
+        textColour: "white",
+        image: beach,
+        location: "Onomichi, Japan",
+        time: "3:37pm"
     }
 ];
 
