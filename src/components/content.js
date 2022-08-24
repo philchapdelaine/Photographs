@@ -13,48 +13,58 @@ import lake from '../images/lake.jpg'
 const pictures = [
     {
         inactive: "001",
-        name: "'Citypop Music Video'",
+        name: "'Going Going Home'",
         textColour: "white",
-        image: sign
+        image: sign,
+        location: "Onomichi, Japan",
+        time: "2:08pm"
     }, 
     {
         inactive: "002",
         name: "'Evening at Mel's'",
         textColour: "white",
-        image: mels
+        image: mels,
+        location: "Osaka, Japan",
+        time: "10:26pm"
     }, 
     {
         inactive: "003",
-        name: "'Sleeping'",
+        name: "'Sleeping on Futons'",
         textColour: "white",
-        image: ryokan
+        image: ryokan,
+        location: "Tokyo, Japan",
+        time: "8:56am"
     }, 
     {
         inactive: "004",
-        name: "Fishing Boat?",
+        name: "'Ghibli Movie'",
         textColour: "white",
-        image: boat
+        image: boat,
+        location: "Onomichi, Japan",
+        time: "2:43pm"
     }, 
     {
         inactive: "005",
-        name: "untitled 3",
+        name: "'Late Night Eats'",
         textColour: "white",
-        image: montreal_shop
+        image: montreal_shop,
+        location: "Montreal, Canada",
+        time: "10:32pm"
     },
     {
         inactive: "006",
-        name: "untitled 6",
+        name: "'Nothing Out Here'",
         textColour: "white",
-        image: lake
+        image: lake,
+        location: "Nelson, Canada",
+        time: "3:05pm"
     }
 ];
 
 
 
 const Content = () => {
-    const [active, setActive] = React.useState(0);
-    let signGatsby = getImage(pictures[0].image);
-
+    const [active, setActive] = React.useState(2);
 
     return(
         <div className="content-container">
@@ -72,6 +82,13 @@ const Content = () => {
                 })
                 }
             </ul>
+            <div className='about'>
+                about
+            </div>
+            <div className='description-container'>
+                <div>{pictures[active].location}</div>
+                <div>{pictures[active].time}</div>
+            </div>
             <div>
                 <img 
                 className="fill-window" 

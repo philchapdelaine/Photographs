@@ -18,6 +18,21 @@
     margin-bottom: 1rem;
 }
 
+.about {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.description-container {
+    font-size: 1rem;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    margin-bottom: 2rem;
+    line-height: 0.5cm;
+}
+
 .image {
     height: 100vh;
     z-index: -1;
