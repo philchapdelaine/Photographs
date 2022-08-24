@@ -116,6 +116,7 @@ const Content = () => {
                 })
                 }
             </ul>
+            <div className='name'></div>
             <div className='about' style={{cursor:'pointer'}}>
                 about
             </div>
