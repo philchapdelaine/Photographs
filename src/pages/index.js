@@ -9,7 +9,6 @@ import Content from "../components/content"
 
 const IndexPage = () => (
   <Layout>
-    <Header />
     <Content />
   </Layout>
 )

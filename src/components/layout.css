@@ -29,6 +29,7 @@
   --size-content: 54rem;
   --size-gutter: var(--space-5);
   --size-gap: var(--space-6);
+  overflow: hidden;
 }
 html {
   -webkit-text-size-adjust: 100%;
@@ -46,6 +47,7 @@ body {
   font-weight: normal;
   margin: 0;
   word-wrap: break-word;
+  color: white;
 }
 a {
   background-color: transparent;

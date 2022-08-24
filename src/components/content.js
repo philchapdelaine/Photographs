@@ -4,38 +4,48 @@ import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
 import './content.css'
 import sign from '../images/sign.jpg'
 import boat from '../images/boat.jpg'
+import ryokan from '../images/ryokan.jpg'
+import mels from '../images/mels_diner.jpg'
+import montreal_shop from '../images/montreal_shop.jpg'
+import lake from '../images/lake.jpg'
 
 
 const pictures = [
     {
         inactive: "001",
-        name: "Untitled 2:08pm",
+        name: "'Untitled 2:08pm'",
         textColour: "white",
         image: sign
     }, 
     {
         inactive: "002",
-        name: "Untitled",
+        name: "'Evening at Mel's'",
         textColour: "white",
-        image: boat
+        image: mels
     }, 
     {
         inactive: "003",
-        name: "This Might Be the Highlight of My Trip",
+        name: "Sleeping ",
         textColour: "white",
-        image: boat
+        image: ryokan
     }, 
     {
         inactive: "004",
-        name: "This Might Be the Highlight of My Trip",
+        name: "testing 2",
         textColour: "white",
         image: boat
     }, 
     {
         inactive: "005",
-        name: "This Might Be the Highlight of My Trip",
+        name: "untitled 3",
         textColour: "white",
-        image: boat
+        image: montreal_shop
+    },
+    {
+        inactive: "006",
+        name: "untitled 6",
+        textColour: "white",
+        image: lake
     }
 ];
 
@@ -64,7 +74,7 @@ const Content = () => {
             </ul>
             <div className='fill-window'>
                 <img 
-                className="image" 
+                className="fill-window" 
                 src={pictures[active].image} 
                 alt="image"
                 />
