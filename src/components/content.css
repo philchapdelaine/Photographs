@@ -1,0 +1,32 @@
+.content-container {
+    min-height: 80vh;
+}
+
+.collection_nav {
+    z-index: 99;
+    list-style-type: none; /* Remove bullets */
+}
+
+.collection_nav_item {
+    font-size: 4rem;
+    text-decoration: none;
+    line-height: 1cm;
+    margin-bottom: 1.5rem;
+}
+
+.image {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.fill-window {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
