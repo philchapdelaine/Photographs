@@ -1,7 +1,9 @@
 import * as React from 'react'
 import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
+import { CSSTransition } from 'react-transition-group';
 
 import './content.css'
+import Modal from './modal.js'
 import sign from '../images/sign.jpg'
 import boat from '../images/boat.jpg'
 import ryokan from '../images/ryokan.jpg'
@@ -95,10 +97,14 @@ const pictures = [
     }
 ];
 
-
-
 const Content = () => {
     const [active, setActive] = React.useState(2);
+    const [showModal, setShowModal] = React.useState(false);
+
+    
+    const handleOpen = () => {
+        console.log("clicked");
+    }
 
     return(
         <div className="content-container">
@@ -119,9 +125,12 @@ const Content = () => {
             <div className='name'></div>
             <div className='about-container' style={{cursor:'pointer'}}>
                 <div className='phil'>
-                    <a className='phil' rel="noreferrer" href="https://www.linkedin.com/in/philippe-chapdelaine-b63561185/" target="_blank">phil</a>
+                    <a className='phil' rel="noreferrer" href="https://www.philchapdelaine.com/" target="_blank">phil</a>
                 </div>
-                <div className='about'>about</div>
+                <div className='about' onClick={() => handleOpen()}>about</div>
+            </div>
+            <div className='modal-container'>
+                {showModal && <Modal />}
             </div>
             <div className='description-container'>
                 <div>{pictures[active].location}</div>
