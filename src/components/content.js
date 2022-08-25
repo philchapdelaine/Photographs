@@ -101,8 +101,10 @@ const Content = () => {
     const [active, setActive] = React.useState(2);
     const [showModal, setShowModal] = React.useState(false);
     const [playing, setPlaying] = React.useState(false);
+    
+    const playAudio = typeof window !== 'undefined' ? new Audio(audio) : null
 
-    const bgMusic = React.useRef(new Audio(audio));
+    const bgMusic = React.useRef(playAudio);
     
     const toggleAudio = () => {
         if (playing) {
