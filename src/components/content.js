@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
 import { CSSTransition } from 'react-transition-group';
 
 import './content.css'
@@ -12,6 +11,7 @@ import montreal_shop from '../images/montreal_shop.jpg'
 import lake from '../images/lake.jpg'
 import bridge from '../images/bridge.jpg'
 import beach from '../images/beach.jpg'
+import audio from '../audio/any1.mp3';
 
 const pictures = [
     {
@@ -100,12 +100,24 @@ const pictures = [
 const Content = () => {
     const [active, setActive] = React.useState(2);
     const [showModal, setShowModal] = React.useState(false);
+    const [playing, setPlaying] = React.useState(false);
 
+    const bgMusic = React.useRef(new Audio(audio));
     
+    const toggleAudio = () => {
+        if (playing) {
+            bgMusic.current.pause();
+            setPlaying(false);
+        } else {
+            bgMusic.current.play();
+            setPlaying(true);
+        }
+    };
+
     const handleOpen = () => {
         console.log("clicked");
         setShowModal(!showModal);
-    }
+    };
 
     return(
         <div className="content-container">
@@ -135,6 +147,10 @@ const Content = () => {
                         <input type="checkbox" />
                     </label>
                 </div>
+                    <label class="checkbox">
+                        <span className='music' onClick={() => toggleAudio()}>music</span>
+                        <input type="checkbox" />
+                    </label>
             </div>
             <div className='modal-container'>
                 {showModal && <Modal />}
