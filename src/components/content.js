@@ -104,6 +104,7 @@ const Content = () => {
     
     const handleOpen = () => {
         console.log("clicked");
+        setShowModal(!showModal);
     }
 
     return(
@@ -127,7 +128,12 @@ const Content = () => {
                 <div className='phil'>
                     <a className='phil' rel="noreferrer" href="https://www.philchapdelaine.com/" target="_blank">phil</a>
                 </div>
-                <div className='about' onClick={() => handleOpen()}>about</div>
+                <div className='subtitles'>
+                    <label class="checkbox">
+                        <span onClick={() => handleOpen()}>subtitles</span>
+                        <input type="checkbox" />
+                    </label>
+                </div>
             </div>
             <div className='modal-container'>
                 {showModal && <Modal />}
