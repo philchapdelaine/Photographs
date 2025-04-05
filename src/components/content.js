@@ -140,8 +140,8 @@ const Content = () => {
             <div className='name'></div>
             <div className='about-container' style={{cursor:'pointer'}}>
                 <div className='phil'>
-                    {/*<a className='phil' rel="noreferrer" href="https://www.philchapdelaine.com/" target="_blank">phil</a>*/}
-                    <a className='phil'>phil</a>
+                    <a className='phil' rel="noreferrer" href="https://www.philchapdelaine.com/" target="_blank">phil</a>
+                    {/*<a className='phil'>phil</a>*/}
                 </div>
                 {/*<div className='about' onClick={() => handleOpen()}>about</div>*/}
                 <div className='subtitles'>
